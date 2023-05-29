@@ -15,12 +15,12 @@ const customer = new mongoose.Schema({
         type : String,
         minlength : 10,
         maxlength : 10,
-        require : true,
+        required : true,
         unique : true
     },
     DOB : {
         type : Date,
-        require : true
+        required : true
     },
     emailID: {
         type: String,
@@ -31,14 +31,14 @@ const customer = new mongoose.Schema({
     address : String,
     customerID : {
         type: String,
-        match: /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/,
+        //match: /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/,
         required: true,
         unique : true
       },
     status : {
         type : String,
         enum : ['ACTIVE' , 'INACTIVE'],
-        require : true
+        required : true
     }
 },   {timestamps : true
 });
