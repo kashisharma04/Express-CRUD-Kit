@@ -8,7 +8,6 @@ const app = express();
 // app.use(middlewareOne)
    
    
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 mongoose.connect(MONGODB_CONNECT,
