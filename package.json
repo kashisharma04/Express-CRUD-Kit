@@ -1,0 +1,23 @@
+{
+  "name": "bonosproject",
+  "version": "1.0.0",
+  "description": "Problem Statement: \r Create two API’s which can perform the specified CRUD operations.\r The project structure should have models, middlewares, controllers and services.'\r Write MongoDB queries to fetch, update, add or delete data from the specified \r collections. You can assume that the collections already exist in the database and \r just define the project structure. \r Customer API \r 1. Get all customers List with status ACTIVE [GET] \r 2. Delete customer. [DELETE] \r 3. Create new customer [POST] \r Card API \r 1. Get all Card List[GET] \r 2. Create new card [POST] \r Customer collection field: \r Field \r Type Description\r firstName            string\r lastName             string\r mobileNumber         string 10 digits long\r DOB                  date\r emailID              string abc@xyz.com\r address              string",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.1",
+    "mongoose-sequence": "^5.3.1",
+    "nodemon": "^2.0.22",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {}
+}
